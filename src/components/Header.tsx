@@ -48,19 +48,14 @@ export default function Header() {
                 Features
               </Text>
             </Link>
-            <Link href="/#students">
+            <Link href="/#philosophy">
               <Text size="3" weight="medium" style={{ cursor: "pointer" }}>
-                For Students
+                Philosophy
               </Text>
             </Link>
-            <Link href="/#educators">
+            <Link href="/#quickstart">
               <Text size="3" weight="medium" style={{ cursor: "pointer" }}>
-                For Educators
-              </Text>
-            </Link>
-            <Link href="/#contact">
-              <Text size="3" weight="medium" style={{ cursor: "pointer" }}>
-                Contact
+                Quick Start
               </Text>
             </Link>
 

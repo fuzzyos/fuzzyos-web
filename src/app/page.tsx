@@ -7,9 +7,8 @@ import {
   LayersIcon,
   GlobeIcon,
   GitHubLogoIcon,
-  TerminalIcon,
-  CheckCircledIcon,
-  StarIcon
+  DesktopIcon,
+  CheckCircledIcon
 } from "@radix-ui/react-icons";
 
 export default function Home() {
@@ -127,7 +126,7 @@ export default function Home() {
               <Card>
                 <Flex direction="column" gap="3">
                   <Flex align="center" gap="3">
-                    <TerminalIcon width="24" height="24" />
+                    <DesktopIcon width="24" height="24" />
                     <Heading size="5">Four Execution Modes</Heading>
                   </Flex>
                   <Text size="3" color="gray">
@@ -242,77 +241,6 @@ fuzzy update`}
         </Container>
       </Section>
 
-      <Separator size="4" />
-
-      {/* Testimonials Section */}
-      <Section size="3" style={{ backgroundColor: "var(--accent-2)" }}>
-        <Container size="4">
-          <Flex direction="column" gap="8">
-            <Heading size="8" align="center">What Developers Say</Heading>
-            <Grid columns={{ initial: "1", md: "2" }} gap="6">
-              <Card>
-                <Flex direction="column" gap="3" p="4">
-                  <Flex gap="1">
-                    {[...Array(5)].map((_, i) => (
-                      <StarIcon key={i} style={{ color: "var(--accent-9)" }} />
-                    ))}
-                  </Flex>
-                  <Text size="3" style={{ fontStyle: "italic", lineHeight: "1.6" }}>
-                    &quot;Finally a coding tool that gets out of the way. The extension system means I can
-                    build exactly the workflow I want — no compromises, no bloat.&quot;
-                  </Text>
-                  <Text size="2" weight="bold">— Senior Software Engineer</Text>
-                </Flex>
-              </Card>
-
-              <Card>
-                <Flex direction="column" gap="3" p="4">
-                  <Flex gap="1">
-                    {[...Array(5)].map((_, i) => (
-                      <StarIcon key={i} style={{ color: "var(--accent-9)" }} />
-                    ))}
-                  </Flex>
-                  <Text size="3" style={{ fontStyle: "italic", lineHeight: "1.6" }}>
-                    &quot;The multi-provider support is a game-changer. I switch between Claude and GPT-4o
-                    depending on the task, all in the same session. Nothing else does this as cleanly.&quot;
-                  </Text>
-                  <Text size="2" weight="bold">— Staff Engineer</Text>
-                </Flex>
-              </Card>
-            </Grid>
-          </Flex>
-        </Container>
-      </Section>
-
-      {/* Contact Section */}
-      <Section id="contact" size="3">
-        <Container size="3">
-          <Flex direction="column" gap="8" align="center">
-            <Flex direction="column" gap="4" align="center">
-              <Heading size="8" align="center">Get Involved</Heading>
-              <Text size="4" color="gray" align="center" style={{ maxWidth: "700px" }}>
-                Questions, feedback, or want to contribute? Reach out or explore the source on GitHub.
-              </Text>
-            </Flex>
-
-            <Card size="4" style={{ width: "100%", maxWidth: "600px" }}>
-              <Flex direction="column" gap="6" p="5">
-                <Heading size="6" align="center">Contact Us</Heading>
-                <Flex direction="column" gap="3">
-                  <Flex direction="column" gap="2">
-                    <Text size="2" weight="bold">Email</Text>
-                    <Text size="3">contact@fuzzyos.com</Text>
-                  </Flex>
-                  <Flex direction="column" gap="2">
-                    <Text size="2" weight="bold">GitHub</Text>
-                    <Text size="3">github.com/fuzzyos/fuzzy-code</Text>
-                  </Flex>
-                </Flex>
-              </Flex>
-            </Card>
-          </Flex>
-        </Container>
-      </Section>
     </>
   );
 }

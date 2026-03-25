@@ -1,7 +1,9 @@
 :root {
-  --navy: #000080;
-  --teal: #008080;
+  --purple: #800080;
+  --orchid: #DA70D6;
+  --medium-orchid: #BA55D3;
 }
+
 
 * {
   box-sizing: border-box;

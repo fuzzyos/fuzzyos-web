@@ -41,7 +41,7 @@ export default function Home() {
       <Section id="about" size="3">
         <Container size="4">
           <Flex direction="column" gap="6">
-            <Heading size="8" align="center">About FuzzyOS</Heading>
+            <Heading size="8" align="center">About Fuzzy</Heading>
             <Text size="4" style={{ lineHeight: "1.8", maxWidth: "900px", margin: "0 auto" }}>
               Fuzzy ships with powerful defaults — <Code>read</Code>, <Code>write</Code>, <Code>edit</Code>,
               and <Code>bash</Code> — and skips features like sub-agents and plan mode by design.

@@ -16,8 +16,8 @@ export default function Footer() {
             {/* Company Info */}
             <Flex direction="column" gap="4">
               <Flex direction="column" gap="2">
-                <Text size="5" weight="bold" style={{ color: "#0044FF" }}>
-                  FuzzyOS
+                <Text size="5" weight="bold" style={{ color: "#BA55D3" }}>
+                  Fuzzy
                 </Text>
                 <Text size="3" weight="medium" style={{ color: "#8b8b8b" }}>
                   Minimal Terminal Coding Harness

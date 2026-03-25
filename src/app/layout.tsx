@@ -13,10 +13,10 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   icons: {
     icon: [
-      { url: '/images/logo.svg', type: 'image/svg+xml' },
+      { url: '/assets/images/logo_text.svg', type: 'image/svg+xml' },
       { url: '/favicon.ico', sizes: 'any' },
     ],
-    apple: { url: '/images/logo.svg', type: 'image/svg+xml' },
+    apple: { url: '/assets/images/logo_text.svg', type: 'image/svg+xml' },
   },
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
       <body>
         <AuthKitProvider>
-          <Theme accentColor="blue" grayColor="slate" radius="medium" scaling="100%">
+          <Theme accentColor="purple" grayColor="slate" radius="medium" scaling="100%">
             <div className="min-h-screen flex flex-col">
               <Header />
               <main className="flex-1">

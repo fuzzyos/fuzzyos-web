@@ -27,7 +27,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/images/logo.svg"
+              src="/assets/images/logo_text.svg"
               alt="FuzzyOS"
               width={180}
               height={50}

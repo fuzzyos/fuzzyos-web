@@ -1,5 +1,6 @@
 :root {
   --purple: #800080;
+  --dark-orchid: #9932CC;
   --orchid: #DA70D6;
   --medium-orchid: #BA55D3;
 }
@@ -24,4 +25,40 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Theme-aware logo switching */
+.logo-light {
+  display: none;
+}
+
+.logo-dark {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  .logo-light {
+    display: block;
+  }
+
+  .logo-dark {
+    display: none;
+  }
+}
+
+/* Radix theme overrides */
+.dark .logo-light {
+  display: none;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.light .logo-light {
+  display: block;
+}
+
+.light .logo-dark {
+  display: none;
 }

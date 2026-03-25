@@ -27,11 +27,21 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/assets/images/logo_text.svg"
+              src="/assets/images/logo_text_dark.svg"
               alt="FuzzyOS"
               width={180}
               height={50}
               priority
+              className="logo-dark"
+              style={{ height: 'auto' }}
+            />
+            <Image
+              src="/assets/images/logo_text_light.svg"
+              alt="FuzzyOS"
+              width={180}
+              height={50}
+              priority
+              className="logo-light"
               style={{ height: 'auto' }}
             />
           </Link>

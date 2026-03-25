@@ -14,11 +14,10 @@ export const contentType = 'image/png'
 export default function Icon() {
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
-          background: '#2563eb',
+          fontSize: 20,
+          background: 'linear-gradient(135deg, #9932CC, #BA55D3)',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -26,13 +25,13 @@ export default function Icon() {
           justifyContent: 'center',
           color: 'white',
           fontWeight: 'bold',
-          borderRadius: '4px',
+          borderRadius: '6px',
+          fontFamily: 'monospace',
         }}
       >
-        O
+        F~
       </div>
     ),
-    // ImageResponse options
     {
       ...size,
     }
